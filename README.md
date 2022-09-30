@@ -1,6 +1,4 @@
-# How to build Instagram using Ruby on Rails
 
-This is source code for my course: [How to build Instagram using Ruby on Rails](https://www.udemy.com/course/1648774/) 
 
 ## Demo
 Here is a working live demo: https://longram.herokuapp.com/
