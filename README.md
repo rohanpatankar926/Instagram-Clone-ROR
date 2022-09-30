@@ -1,5 +1,4 @@
 
-
 ## Demo
 Here is a working live demo: https://longram.herokuapp.com/
 
@@ -36,9 +35,9 @@ To fix a bug or enhance an existing module, follow these steps:
 
 ### Bug / Feature Request
 
-If you find a bug, kindly open an issue [here](https://github.com/truongnmt/instagram-udemy/issues/new).
+If you find a bug, kindly open an issue [here](https://github.com/rohanpatankar926/Instagram-Clone-ROR/issues/new).
 
-If you'd like to request a new function, feel free to do so by opening an issue [here](https://github.com/truongnmt/instagram-udemy/issues/new). Please include sample queries and their corresponding results.
+If you'd like to request a new function, feel free to do so by opening an issue [here](https://github.com/rohanpatankar926/Instagram-Clone-ROR/issues/new). Please include sample queries and their corresponding results.
 
 
 ## Built with
@@ -50,4 +49,4 @@ If you'd like to request a new function, feel free to do so by opening an issue 
 
 ## [License](LICENSE.md)
 
-MIT © [Truong Nguyen](https://github.com/truongnmt)
+MIT © [Rohan Patankar](https://github.com/rohanpatankar926)
