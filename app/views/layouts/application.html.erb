@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%= csrf_meta_tags %>
+    <%= display_meta_tags site: 'Instagram • Capture, edit & share photos, videos & messages with friends & family.',
+                          keywords: %w[udemy instagram clone],
+                          description: "Create an account or log in to Instagram - A simple, fun & creative way to capture, edit & share photos, videos & messages with friends & family."%>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <%= favicon_link_tag 'icon.png' %>
+  </head>
+
+  <body>
+    <%= render 'shared/navbar' if current_user %>
+    <div class="container">
+      <%= yield %>
+    </div>
+    <%= render 'shared/footer' %>
+
+    <% if flash.any? %>
+      <script type="text/javascript">
+        <% flash.each do |key, value| %>
+          <% type = key.to_s.gsub('alert', 'error').gsub('notice', 'success') %>
+          toastr.<%= type %>('<%= value %>')
+        <% end %>
+      </script>
+    <% end %>
+  </body>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-65590279-6"></script>
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-65590279-6');
+  </script>
+</html>
